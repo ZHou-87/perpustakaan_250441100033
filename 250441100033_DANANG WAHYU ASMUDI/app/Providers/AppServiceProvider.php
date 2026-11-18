@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if ($this->app->environment('production') || isset($_ENV['VERCEL']) || isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
         // SOAL 3: Gate 'kelola-buku' (Hanya role admin dan petugas)
         Gate::define('kelola-buku', function (?User $user) {
             return $user ? $user->hasRole(['admin', 'petugas']) : false;
