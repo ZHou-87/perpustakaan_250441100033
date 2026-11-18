@@ -7,7 +7,7 @@
             </div>
             @role('siswa')
                 <a href="{{ route('peminjaman.riwayat', Auth::id()) }}" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm transition">
-                    &larr; Riwayat Peminjaman
+                    &larr; Riwayat Peminjaman KU
                 </a>
             @else
                 <a href="{{ route('peminjaman.index') }}" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm transition">
