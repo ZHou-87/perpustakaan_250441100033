@@ -13,7 +13,7 @@
                     <p class="text-xs text-gray-500">Jelajahi koleksi buku dan ajukan pinjaman.</p>
                 </a>
                 <a href="{{ route('peminjaman.riwayat', Auth::id()) }}" class="p-4 bg-yellow-50 border-2 border-yellow-300 rounded-lg hover:bg-yellow-100 transition block">
-                    <div class="font-bold text-yellow-900 mb-1">Riwayat Peminjaman</div>
+                    <div class="font-bold text-yellow-900 mb-1">Riwayat Peminjaman Ku</div>
                     <p class="text-xs text-gray-600">Pantau status persetujuan & pengembalian buku Anda.</p>
                 </a>
                 <a href="{{ route('profile.edit') }}" class="p-4 bg-gray-50 border rounded-lg hover:bg-gray-100 transition block">
