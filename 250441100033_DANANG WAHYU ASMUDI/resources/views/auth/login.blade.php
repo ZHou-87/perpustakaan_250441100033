@@ -1,4 +1,10 @@
 <x-guest-layout>
+    <!-- Identitas Mahasiswa untuk Verifikasi Auto Deploy (Soal 5) -->
+    <div class="mb-6 text-center">
+        <h2 class="text-xl font-bold text-gray-800">Login Sistem Perpustakaan</h2>
+        <p class="text-sm font-semibold text-indigo-600">NIM: 250441100033 - Danang Wahyu Asmudi</p>
+    </div>
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
